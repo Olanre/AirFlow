@@ -1,0 +1,37 @@
+
+
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    
+    <script src="/socket/socket.io.js"></script>
+		<script src = "/js/require.js"> </script>
+	<script src="/js/main.js"> </script>
+	
+	<link rel="stylesheet" href="/css/main.css">
+	
+  </head>
+  <body>
+  <script type = 'template-input' id = 'upload template'>
+		<h2>File Uploader</h2>
+        <span id='UploadArea'>
+            <label for="FileBox">Choose A File: </label><input type="file" id="FileBox"><br>
+            <label for="NameBox">Name: </label><input type="text" id="NameBox"><br>
+ 
+            <button  type='button' id='UploadButton' class='Button'>Upload</button>
+        </span>
+	</script>
+	<div id = 'Id'>
+	<h2 id = 'MyId'> </h2>
+	</div>
+  	<div id = "UploadBox">
+    	<div id = 'ConnectedTo'>
+      <input id="m" autocomplete="off" placeholder="Enter Client Name" /><button onclick = 'newConnection()'>Connect</button>
+      </div>
+      <br/>
+      <div id = 'Uploader'></div>
+        
+    </div>
+  </body>
+</html>
